@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.69)
 		(legacy_teardrops no)
@@ -13,19 +13,19 @@
 	)
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
-		(33 "F.Adhes" user "F.Adhesive")
-		(35 "F.Paste" user)
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(49 "F.Fab" user)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(13 "F.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
 	)
 	(setup
 		(stackup
@@ -84,10 +84,11 @@
 		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(aux_axis_origin 125 130)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions yes)
 			(usegerberattributes no)
@@ -97,7 +98,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 6)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin yes)
 			(hpglpennumber 1)
@@ -105,16 +105,19 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue no)
-			(plotfptext yes)
-			(plotinvisibletext no)
+			(plot_black_and_white yes)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk yes)
 			(outputformat 1)
 			(mirror no)
@@ -148,7 +151,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R3"
-			(at -2.175 0 360)
+			(at -2.175 0 0)
 			(layer "Cmts.User")
 			(uuid "5ddf23b8-ab8e-4ada-84f8-63b5a052b1ad")
 			(effects
@@ -159,7 +162,7 @@
 			)
 		)
 		(property "Value" "6k8/100mW"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "6a7c4fe8-f13a-442c-a4d0-6cbd65668313")
 			(effects
@@ -169,20 +172,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Tales:R_0603_1608Metric"
-			(at 0 0 360)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "addabf4e-f8f4-4539-af2c-21f5d8ba8f40")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0d2fd272-1cb0-4b4d-8655-9448a340ecf7")
@@ -194,7 +185,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "841024ca-3ec6-413f-a890-27583157b030")
@@ -206,7 +197,7 @@
 			)
 		)
 		(property "JLCPCB BOM" "1"
-			(at 304.65 143 360)
+			(at 304.65 143 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ccbd4d16-e785-4640-9090-290ca4bdeba5")
@@ -218,7 +209,7 @@
 			)
 		)
 		(property "LCSC Part #" "C23212"
-			(at 304.65 143 360)
+			(at 304.65 143 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ff6b2804-3ece-40df-8ed4-70a675e754e9")
@@ -230,7 +221,7 @@
 			)
 		)
 		(property "Mfr" "Uniroyal"
-			(at 304.65 143 360)
+			(at 304.65 143 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "748f9bf3-2473-4ee9-9d14-9235391a7b18")
@@ -242,7 +233,7 @@
 			)
 		)
 		(property "Mfr PN" "0603WAF6801T5E"
-			(at 304.65 143 360)
+			(at 304.65 143 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bacc5fb2-c71f-4990-b377-28f9750991ab")
@@ -254,7 +245,7 @@
 			)
 		)
 		(property "Package" "0603/1608"
-			(at 304.65 143 360)
+			(at 304.65 143 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f51aa81e-7494-4b37-b56b-9d586632055e")
@@ -266,7 +257,7 @@
 			)
 		)
 		(property "Technology" ""
-			(at 304.65 143 360)
+			(at 304.65 143 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3d1612d0-98b0-4f13-b73f-1de087205227")
@@ -278,7 +269,7 @@
 			)
 		)
 		(property "Vendor" "JLCPCB"
-			(at 304.65 143 360)
+			(at 304.65 143 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "41f57bf6-d9ef-45a0-977f-deac42d83d54")
@@ -290,7 +281,7 @@
 			)
 		)
 		(property "Vendor PN" "C23212 "
-			(at 304.65 143 360)
+			(at 304.65 143 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5efb42a3-4a11-4d4e-af24-e712c0cccdf5")
@@ -407,7 +398,7 @@
 			(uuid "1ff1093f-c1cb-4556-ac96-cf4704bf88a7")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "ff0f9efb-02a5-4093-b52e-0a9097804a41")
 			(effects
@@ -420,7 +411,7 @@
 		(pad "1" smd roundrect
 			(at -0.825 0)
 			(size 0.8 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "+24V")
 			(pintype "passive")
@@ -429,12 +420,13 @@
 		(pad "2" smd roundrect
 			(at 0.825 0)
 			(size 0.8 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 6 "Net-(D5-A)")
 			(pintype "passive")
 			(uuid "d73fde32-38e3-4451-8e6e-05d43d023fb0")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -471,18 +463,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Tales:TerminalBlock_Dibo_DB142V-5.08-4P_1x04_P5.08mm_Vertical"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "549b13c0-fbe6-480c-96fc-11ce86cd07e1")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1207,7 +1187,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "7c49bad4-e1fd-4380-90c2-23220c16c983")
 		)
@@ -1218,7 +1198,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "c7bfbd35-4484-4fa4-aae2-e31190f7e019")
 		)
@@ -1229,7 +1209,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "efb8cd4e-0cd6-4c7f-93c7-495f2f001099")
 		)
@@ -1240,7 +1220,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "c7b49f9d-dde4-4eed-b324-5c1f0a3cf648")
 		)
@@ -1251,7 +1231,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "ab162c5e-f4f6-47a1-9c6e-9d8a061be972")
 		)
@@ -1262,7 +1242,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "65f2928c-2356-4cd6-959b-0079604b1b6c")
 		)
@@ -1273,7 +1253,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "a542bba7-a0c2-435f-b2d8-f8042408a756")
 		)
@@ -1284,7 +1264,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "b2239c32-e0ba-47b3-974c-581c95956fc7")
 		)
@@ -1295,7 +1275,7 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "3f61b62b-8b10-4819-b632-2f264c0a6c64")
 		)
@@ -1439,6 +1419,7 @@
 			(pintype "passive")
 			(uuid "2dc37ce4-49f0-40bb-9a9d-f12f7f924f2a")
 		)
+		(embedded_fonts no)
 		(model "${TDEV_3DMODEL_DIR}/TerminalBlock.3dshapes/TerminalBlock_DB142V-508-4P.stp"
 			(offset
 				(xyz 17.78 9.1 0)
@@ -1458,7 +1439,7 @@
 		(descr "SOD-123")
 		(tags "SOD-123")
 		(property "Reference" "D4"
-			(at -0.15 0 360)
+			(at -0.15 0 0)
 			(layer "Cmts.User")
 			(uuid "a3f08e49-df6b-4a7e-920b-a573f566a917")
 			(effects
@@ -1469,7 +1450,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 0 2.1 360)
+			(at 0 2.1 0)
 			(layer "F.Fab")
 			(uuid "44f2c123-c1d3-4734-9a24-d7628025ee05")
 			(effects
@@ -1479,20 +1460,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Tales:D_SOD-123"
-			(at 0 0 360)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ef3ab2ff-e80f-432c-a885-350aa0d55f38")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "dba0d827-2c88-4c53-a836-12eeb3915c2f")
@@ -1504,7 +1473,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ee373343-4c1a-46e7-a0e8-3cc4cf4ba5fe")
@@ -1516,7 +1485,7 @@
 			)
 		)
 		(property "JLCPCB BOM" "1"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "14a10144-7fc0-4807-9178-83f5255b6fcd")
@@ -1528,7 +1497,7 @@
 			)
 		)
 		(property "LCSC Part #" "C81598"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a2031071-d467-41c5-92fe-8845612e579a")
@@ -1540,7 +1509,7 @@
 			)
 		)
 		(property "Mfr" "Semtech"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d2c553ec-de46-4f90-808f-0bec8df6f263")
@@ -1552,7 +1521,7 @@
 			)
 		)
 		(property "Mfr PN" "1N4148W"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3fd9c533-13b7-4f5b-a8b7-15794ae4094d")
@@ -1564,7 +1533,7 @@
 			)
 		)
 		(property "Package" "SOD-123"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "07d883fb-c539-472f-b901-f0d020f567dc")
@@ -1576,7 +1545,7 @@
 			)
 		)
 		(property "Technology" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "810d154f-fb7b-44c5-86c2-d9b78ff56adf")
@@ -1588,7 +1557,7 @@
 			)
 		)
 		(property "Vendor" "JLCPCB"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ad291827-7911-4a71-9e07-8d0a6f2f50a6")
@@ -1600,7 +1569,7 @@
 			)
 		)
 		(property "Vendor PN" "C81598"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6cb9706a-0e5d-44f2-b954-c4490dcdd634")
@@ -1679,7 +1648,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "af10acac-291b-4f77-ba41-ac1a3ccde004")
 		)
@@ -1834,7 +1803,7 @@
 			(uuid "1a721e25-6d52-481e-8bbd-f2d11d9b5a7e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -2 360)
+			(at 0 -2 0)
 			(layer "F.Fab")
 			(uuid "24f8665d-ce17-4d06-9c83-fc731f0741ea")
 			(effects
@@ -1847,7 +1816,7 @@
 		(pad "1" smd roundrect
 			(at -1.65 0)
 			(size 1.3 1.75)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "+24V")
 			(pinfunction "K")
@@ -1857,13 +1826,14 @@
 		(pad "2" smd roundrect
 			(at 1.65 0)
 			(size 1.3 1.75)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 5 "Net-(D3-K)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "bec976e5-f909-44aa-9799-d87ee95da191")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1900,18 +1870,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Tales:LED_0603_1608Metric"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1b65b406-5872-406a-90f7-43cb69783d88")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2078,7 +2036,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "efd08733-54a3-4a35-9e15-5edbe216ac75")
 		)
@@ -2186,7 +2144,7 @@
 		(pad "1" smd roundrect
 			(at -0.7875 0)
 			(size 0.875 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 9 "Net-(D7-K)")
 			(pinfunction "K")
@@ -2196,13 +2154,14 @@
 		(pad "2" smd roundrect
 			(at 0.7875 0)
 			(size 0.875 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 8 "Net-(D7-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "e09975d4-20fe-49be-9c51-a839e92bface")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2222,7 +2181,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R4"
-			(at -2.175 0 360)
+			(at -2.175 0 0)
 			(layer "Cmts.User")
 			(uuid "af0fac50-59bc-49a8-9166-5cb1e2c5951e")
 			(effects
@@ -2233,7 +2192,7 @@
 			)
 		)
 		(property "Value" "6k8/100mW"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "67cbcc25-1c04-4338-8150-3e51293e92f1")
 			(effects
@@ -2243,20 +2202,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Tales:R_0603_1608Metric"
-			(at 0 0 360)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "02fcf98a-2b3f-41ca-8498-1677a5980b2a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fa4efb15-b643-490e-95e2-e72c2f3cbe9b")
@@ -2268,7 +2215,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "68e0c228-8a20-4bcc-945f-ddd392949ef7")
@@ -2280,7 +2227,7 @@
 			)
 		)
 		(property "JLCPCB BOM" "1"
-			(at 304.65 146 360)
+			(at 304.65 146 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1605cb2d-5270-4024-b2d1-e112ebef985f")
@@ -2292,7 +2239,7 @@
 			)
 		)
 		(property "LCSC Part #" "C23212"
-			(at 304.65 146 360)
+			(at 304.65 146 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2ab15372-a7c3-4389-ba24-eac89a907602")
@@ -2304,7 +2251,7 @@
 			)
 		)
 		(property "Mfr" "Uniroyal"
-			(at 304.65 146 360)
+			(at 304.65 146 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e334ccd7-e7ca-460e-8f9d-5b63e0e0d416")
@@ -2316,7 +2263,7 @@
 			)
 		)
 		(property "Mfr PN" "0603WAF6801T5E"
-			(at 304.65 146 360)
+			(at 304.65 146 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2ed91408-31bc-4071-83f4-166e5099ce82")
@@ -2328,7 +2275,7 @@
 			)
 		)
 		(property "Package" "0603/1608"
-			(at 304.65 146 360)
+			(at 304.65 146 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "aae268c5-7b3c-4158-9352-2a08eed3d6f3")
@@ -2340,7 +2287,7 @@
 			)
 		)
 		(property "Technology" ""
-			(at 304.65 146 360)
+			(at 304.65 146 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0c65c08f-af97-46ec-b772-dac2babf3d06")
@@ -2352,7 +2299,7 @@
 			)
 		)
 		(property "Vendor" "JLCPCB"
-			(at 304.65 146 360)
+			(at 304.65 146 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "90717d15-6312-4053-b1f6-0b0f50524d7f")
@@ -2364,7 +2311,7 @@
 			)
 		)
 		(property "Vendor PN" "C23212 "
-			(at 304.65 146 360)
+			(at 304.65 146 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1a905be5-f3e1-42ed-a65f-bf83bf5a193f")
@@ -2481,7 +2428,7 @@
 			(uuid "cc511d13-fe55-4434-a78c-1fd62c43014a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "1c57bd59-5484-483e-854c-650f6006b77d")
 			(effects
@@ -2494,7 +2441,7 @@
 		(pad "1" smd roundrect
 			(at -0.825 0)
 			(size 0.8 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "+24V")
 			(pintype "passive")
@@ -2503,12 +2450,13 @@
 		(pad "2" smd roundrect
 			(at 0.825 0)
 			(size 0.8 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 8 "Net-(D7-A)")
 			(pintype "passive")
 			(uuid "da126cf9-136b-40a5-92e5-4c049a6921f4")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2545,18 +2493,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Tales:LED_0603_1608Metric"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d6a9c9a8-f1cd-4b06-8375-681487b7545c")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2723,7 +2659,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "c7d18ced-0e80-4d6c-b294-f5157130638a")
 		)
@@ -2831,7 +2767,7 @@
 		(pad "1" smd roundrect
 			(at -0.7875 0)
 			(size 0.875 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 3 "Net-(D1-K)")
 			(pinfunction "K")
@@ -2841,13 +2777,14 @@
 		(pad "2" smd roundrect
 			(at 0.7875 0)
 			(size 0.875 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "Net-(D1-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "46160286-3b3f-474b-b1a7-5ddb0262a617")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2867,7 +2804,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R2"
-			(at -2.175 0 360)
+			(at -2.175 0 0)
 			(layer "Cmts.User")
 			(uuid "134dd49a-61ad-4c06-a677-29521086c750")
 			(effects
@@ -2878,7 +2815,7 @@
 			)
 		)
 		(property "Value" "6k8/100mW"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "0f388b49-ef1f-4d2f-aba9-4c5087973164")
 			(effects
@@ -2888,20 +2825,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Tales:R_0603_1608Metric"
-			(at 0 0 360)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "768bbbd4-eb75-4691-ac81-c0172ab136ba")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2ea8ce66-c3ec-41d6-8b37-470e96332951")
@@ -2913,7 +2838,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "12ad0d5d-1130-47b6-98a1-b2095408515c")
@@ -2925,7 +2850,7 @@
 			)
 		)
 		(property "JLCPCB BOM" "1"
-			(at 304.65 140 360)
+			(at 304.65 140 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c208d899-b8d4-4ab0-8ee3-196916d8d51f")
@@ -2937,7 +2862,7 @@
 			)
 		)
 		(property "LCSC Part #" "C23212"
-			(at 304.65 140 360)
+			(at 304.65 140 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0dd3e1d7-5d4b-44b7-a7bc-5c3b1a6c892c")
@@ -2949,7 +2874,7 @@
 			)
 		)
 		(property "Mfr" "Uniroyal"
-			(at 304.65 140 360)
+			(at 304.65 140 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ad375198-ca9b-4868-826f-9dfd2a7a61ec")
@@ -2961,7 +2886,7 @@
 			)
 		)
 		(property "Mfr PN" "0603WAF6801T5E"
-			(at 304.65 140 360)
+			(at 304.65 140 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6780d6fe-4df2-469c-8495-ee58a23b0ec1")
@@ -2973,7 +2898,7 @@
 			)
 		)
 		(property "Package" "0603/1608"
-			(at 304.65 140 360)
+			(at 304.65 140 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cf4af435-9ec2-4ea4-a1c3-78f9b56f4418")
@@ -2985,7 +2910,7 @@
 			)
 		)
 		(property "Technology" ""
-			(at 304.65 140 360)
+			(at 304.65 140 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "457f1a2f-7fb1-41c8-9ceb-4ea3d1f2b6cd")
@@ -2997,7 +2922,7 @@
 			)
 		)
 		(property "Vendor" "JLCPCB"
-			(at 304.65 140 360)
+			(at 304.65 140 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "aa9e2d17-8677-47a0-b6f1-1802b0419fe4")
@@ -3009,7 +2934,7 @@
 			)
 		)
 		(property "Vendor PN" "C23212 "
-			(at 304.65 140 360)
+			(at 304.65 140 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "01592247-989e-4e82-8baa-2bd563266c97")
@@ -3126,7 +3051,7 @@
 			(uuid "e46dcedd-5881-4fec-ba12-a0dff26b30f2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "d6fbf4d3-6d01-4210-b588-824182390e8d")
 			(effects
@@ -3139,7 +3064,7 @@
 		(pad "1" smd roundrect
 			(at -0.825 0)
 			(size 0.8 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "+24V")
 			(pintype "passive")
@@ -3148,12 +3073,13 @@
 		(pad "2" smd roundrect
 			(at 0.825 0)
 			(size 0.8 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 4 "Net-(D3-A)")
 			(pintype "passive")
 			(uuid "57bfe315-1409-46b9-9bb7-e5664c3ca5f6")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3173,7 +3099,7 @@
 		(descr "SOD-123")
 		(tags "SOD-123")
 		(property "Reference" "D2"
-			(at -0.15 0 360)
+			(at -0.15 0 0)
 			(layer "Cmts.User")
 			(uuid "df23ed29-69f4-4186-8d2d-3fa2ea829f1a")
 			(effects
@@ -3184,7 +3110,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 0 2.1 360)
+			(at 0 2.1 0)
 			(layer "F.Fab")
 			(uuid "308adfd3-c770-4fd5-9072-5abc0389c59e")
 			(effects
@@ -3194,20 +3120,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Tales:D_SOD-123"
-			(at 0 0 360)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a2c85955-6c59-41fa-ab06-eb02594f1ff8")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d148229c-bc51-4525-bdbd-f14d0672f343")
@@ -3219,7 +3133,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a59f731e-6250-483d-8ed9-a32b469ee064")
@@ -3231,7 +3145,7 @@
 			)
 		)
 		(property "JLCPCB BOM" "1"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3e1f83a9-fd24-4411-bef0-da4412288ef5")
@@ -3243,7 +3157,7 @@
 			)
 		)
 		(property "LCSC Part #" "C81598"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7a698f68-7abc-4666-8d41-37b1277b4590")
@@ -3255,7 +3169,7 @@
 			)
 		)
 		(property "Mfr" "Semtech"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d736c95b-d1bd-4a8a-a06b-9cc5f87c05f9")
@@ -3267,7 +3181,7 @@
 			)
 		)
 		(property "Mfr PN" "1N4148W"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6b883e8c-eb71-4487-90a9-cea13975423c")
@@ -3279,7 +3193,7 @@
 			)
 		)
 		(property "Package" "SOD-123"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f1846743-ef48-4e94-a8da-e422ae752133")
@@ -3291,7 +3205,7 @@
 			)
 		)
 		(property "Technology" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d1726911-0fe7-4a20-ad70-ae1b5fe7183a")
@@ -3303,7 +3217,7 @@
 			)
 		)
 		(property "Vendor" "JLCPCB"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "89776d49-3cbf-451e-ab5f-79d05635ea8c")
@@ -3315,7 +3229,7 @@
 			)
 		)
 		(property "Vendor PN" "C81598"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "81b46baf-9203-4bb2-8e9d-e65c4476b044")
@@ -3394,7 +3308,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "4a4eac93-b62b-4bb3-8cee-d6159cb96fa4")
 		)
@@ -3549,7 +3463,7 @@
 			(uuid "cda54ea2-edbd-442a-8ba1-928bf82dc0e5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -2 360)
+			(at 0 -2 0)
 			(layer "F.Fab")
 			(uuid "a9e1faaa-9942-4730-bbb8-610ace13caac")
 			(effects
@@ -3562,7 +3476,7 @@
 		(pad "1" smd roundrect
 			(at -1.65 0)
 			(size 1.3 1.75)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "+24V")
 			(pinfunction "K")
@@ -3572,13 +3486,14 @@
 		(pad "2" smd roundrect
 			(at 1.65 0)
 			(size 1.3 1.75)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 3 "Net-(D1-K)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "635abe8d-dc22-4780-8e67-3bc0e5559c4d")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3619,18 +3534,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Tales:Relay_SPST_Songle_SRD_FormB"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f896ebb2-2322-4e8c-8745-b4111a1d3f04")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -3656,7 +3559,7 @@
 			)
 		)
 		(property "JLCPCB BOM" "1"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3669,7 +3572,7 @@
 			)
 		)
 		(property "LCSC Part #" "C185801"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3682,7 +3585,7 @@
 			)
 		)
 		(property "Mfr" "Ningbo Songle Relay"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3695,7 +3598,7 @@
 			)
 		)
 		(property "Mfr PN" "SRD-24VDC-SL-B"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3708,7 +3611,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3721,7 +3624,7 @@
 			)
 		)
 		(property "Technology" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3734,7 +3637,7 @@
 			)
 		)
 		(property "Vendor" "JLCPCB"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3747,7 +3650,7 @@
 			)
 		)
 		(property "Vendor PN" "C185801"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4105,6 +4008,7 @@
 			(pintype "passive")
 			(uuid "0f50a760-c0bd-4d49-858c-519e6e3a0e01")
 		)
+		(embedded_fonts no)
 		(model "${KICAD7_3DMODEL_DIR}/Relay_THT.3dshapes/Relay_SPDT_Finder_36.11.wrl"
 			(offset
 				(xyz 2 -6 0)
@@ -4141,18 +4045,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Tales:RV_Disc_D9.50mm_W3.6mm_P5.08mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e6d30d93-aec5-470e-a9d8-cae46e23dac6")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4498,6 +4390,7 @@
 			(pintype "passive")
 			(uuid "ee9a6ac1-9289-493c-8b36-753e55deb044")
 		)
+		(embedded_fonts no)
 		(model "${KICAD7_3DMODEL_DIR}/Varistor.3dshapes/RV_Disc_D7mm_W3.6mm_P5mm.step"
 			(offset
 				(xyz -0.06 0 0)
@@ -4538,18 +4431,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Tales:Relay_SPST_Songle_SRD_FormB"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fa3ca75a-3d80-436b-a093-db253f9a3611")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -4575,7 +4456,7 @@
 			)
 		)
 		(property "JLCPCB BOM" "1"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4588,7 +4469,7 @@
 			)
 		)
 		(property "LCSC Part #" "C185801"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4601,7 +4482,7 @@
 			)
 		)
 		(property "Mfr" "Ningbo Songle Relay"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4614,7 +4495,7 @@
 			)
 		)
 		(property "Mfr PN" "SRD-24VDC-SL-B"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4627,7 +4508,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4640,7 +4521,7 @@
 			)
 		)
 		(property "Technology" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4653,7 +4534,7 @@
 			)
 		)
 		(property "Vendor" "JLCPCB"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -4666,7 +4547,7 @@
 			)
 		)
 		(property "Vendor PN" "C185801"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5024,6 +4905,7 @@
 			(pintype "passive")
 			(uuid "8a032477-942e-44ea-9b0b-4b2e015712ee")
 		)
+		(embedded_fonts no)
 		(model "${KICAD7_3DMODEL_DIR}/Relay_THT.3dshapes/Relay_SPDT_Finder_36.11.wrl"
 			(offset
 				(xyz 2 -6 0)
@@ -5064,18 +4946,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Tales:Relay_SPST_Songle_SRD_FormB"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ef0bae0a-bcba-4441-bbd7-20e643edca00")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -5101,7 +4971,7 @@
 			)
 		)
 		(property "JLCPCB BOM" "1"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5114,7 +4984,7 @@
 			)
 		)
 		(property "LCSC Part #" "C185801"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5127,7 +4997,7 @@
 			)
 		)
 		(property "Mfr" "Ningbo Songle Relay"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5140,7 +5010,7 @@
 			)
 		)
 		(property "Mfr PN" "SRD-24VDC-SL-B"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5153,7 +5023,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5166,7 +5036,7 @@
 			)
 		)
 		(property "Technology" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5179,7 +5049,7 @@
 			)
 		)
 		(property "Vendor" "JLCPCB"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5192,7 +5062,7 @@
 			)
 		)
 		(property "Vendor PN" "C185801"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5550,6 +5420,7 @@
 			(pintype "passive")
 			(uuid "a4ddc14b-e8f9-4b5e-9d42-209a6df5bcaf")
 		)
+		(embedded_fonts no)
 		(model "${KICAD7_3DMODEL_DIR}/Relay_THT.3dshapes/Relay_SPDT_Finder_36.11.wrl"
 			(offset
 				(xyz 2 -6 0)
@@ -5569,7 +5440,7 @@
 		(descr "SOD-123")
 		(tags "SOD-123")
 		(property "Reference" "D6"
-			(at -0.15 0 360)
+			(at -0.15 0 0)
 			(layer "Cmts.User")
 			(uuid "5eb7f53c-c0cf-4a5e-8ebd-1f8f9f86f3fc")
 			(effects
@@ -5580,7 +5451,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 0 2.1 360)
+			(at 0 2.1 0)
 			(layer "F.Fab")
 			(uuid "e97a3d08-f74c-4073-80b4-420a3d69e5e7")
 			(effects
@@ -5590,20 +5461,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Tales:D_SOD-123"
-			(at 0 0 360)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a03b41a7-fb09-472d-bf35-80b8ec2adef5")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a618c6f6-06b5-4676-bb3f-f24d6aba68f1")
@@ -5615,7 +5474,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0a9a9d40-8aba-443d-837c-6d0edfb0fdb0")
@@ -5627,7 +5486,7 @@
 			)
 		)
 		(property "JLCPCB BOM" "1"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e92e9c58-a1fb-40db-86ff-239d70b69958")
@@ -5639,7 +5498,7 @@
 			)
 		)
 		(property "LCSC Part #" "C81598"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "af8ec4ab-5ec3-4b94-ac5f-1a1ffbfa45b8")
@@ -5651,7 +5510,7 @@
 			)
 		)
 		(property "Mfr" "Semtech"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c277a21a-8ea2-41d0-b709-6cab9dc4c1f6")
@@ -5663,7 +5522,7 @@
 			)
 		)
 		(property "Mfr PN" "1N4148W"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d77f9230-7b12-4d96-ab1a-cf38eb5a2a02")
@@ -5675,7 +5534,7 @@
 			)
 		)
 		(property "Package" "SOD-123"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4d770e05-a9e6-4492-8b78-65acbc662add")
@@ -5687,7 +5546,7 @@
 			)
 		)
 		(property "Technology" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "90d449e9-b2f2-41a9-b287-a5a22a7527d3")
@@ -5699,7 +5558,7 @@
 			)
 		)
 		(property "Vendor" "JLCPCB"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cb6779de-3b02-4880-b753-22d81d65666b")
@@ -5711,7 +5570,7 @@
 			)
 		)
 		(property "Vendor PN" "C81598"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6a36423c-f873-45c6-88ee-e5e2b5ba807e")
@@ -5790,7 +5649,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "dc05b808-405f-4c0c-bf84-aa6c01bbc056")
 		)
@@ -5945,7 +5804,7 @@
 			(uuid "0ea8b489-8237-4341-8919-289428949787")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -2 360)
+			(at 0 -2 0)
 			(layer "F.Fab")
 			(uuid "3f1a4585-538b-406a-a8c1-7f72a5fd9c98")
 			(effects
@@ -5958,7 +5817,7 @@
 		(pad "1" smd roundrect
 			(at -1.65 0)
 			(size 1.3 1.75)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "+24V")
 			(pinfunction "K")
@@ -5968,13 +5827,14 @@
 		(pad "2" smd roundrect
 			(at 1.65 0)
 			(size 1.3 1.75)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 7 "Net-(D5-K)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "a34d4c8e-b7e7-4c80-926c-86b02139f72d")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6011,18 +5871,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Tales:TerminalBlock_Dibo_DB142V-5.08-4P_1x04_P5.08mm_Vertical"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "780e5411-1838-49ea-8bac-5bf531634a55")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -6747,7 +6595,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "b1904b5a-1ffb-459e-b6ed-9f997c35455c")
 		)
@@ -6758,7 +6606,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "0371f24b-e539-4464-9e6a-7f28f672e50d")
 		)
@@ -6769,7 +6617,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "8d53ba2d-32b0-4478-ad3b-bbc94ad3bdaa")
 		)
@@ -6780,7 +6628,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "035a6f28-7eb1-4535-be33-518da01a6e77")
 		)
@@ -6791,7 +6639,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "e6217640-f596-4315-afa9-a6028f112da0")
 		)
@@ -6802,7 +6650,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "9d169aab-cc9b-42e7-81b4-0dd997964627")
 		)
@@ -6813,7 +6661,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "239bb9cf-c268-47c0-ab9f-c6a90df83efd")
 		)
@@ -6824,7 +6672,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "03278e9d-e6a4-4831-964f-e8e6f9f2a3db")
 		)
@@ -6835,7 +6683,7 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "3ae1d1f7-ebc8-4fd4-bb7e-af18c3dd1c9b")
 		)
@@ -6979,6 +6827,7 @@
 			(pintype "passive")
 			(uuid "2ff9c3ac-f162-4cb9-82bf-3a80982c84b7")
 		)
+		(embedded_fonts no)
 		(model "${TDEV_3DMODEL_DIR}/TerminalBlock.3dshapes/TerminalBlock_DB142V-508-4P.stp"
 			(offset
 				(xyz 17.78 9.1 0)
@@ -7015,18 +6864,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Tales:LED_0603_1608Metric"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bccb516c-243e-46f1-91a3-f8c3a4552a69")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -7193,7 +7030,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "d4ff7bda-a566-48b0-b4dc-8cbf432d6d55")
 		)
@@ -7301,7 +7138,7 @@
 		(pad "1" smd roundrect
 			(at -0.7875 0)
 			(size 0.875 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 5 "Net-(D3-K)")
 			(pinfunction "K")
@@ -7311,13 +7148,14 @@
 		(pad "2" smd roundrect
 			(at 0.7875 0)
 			(size 0.875 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 4 "Net-(D3-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "9d3f6b09-749b-44ea-8370-1f5394650ecf")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7354,18 +7192,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Tales:RV_Disc_D9.50mm_W3.6mm_P5.08mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d8161704-49fe-4b20-85e3-60c7baccf8cc")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -7711,6 +7537,7 @@
 			(pintype "passive")
 			(uuid "9cdb5276-b0c0-45e9-8c83-bb92e1fff0e0")
 		)
+		(embedded_fonts no)
 		(model "${KICAD7_3DMODEL_DIR}/Varistor.3dshapes/RV_Disc_D7mm_W3.6mm_P5mm.step"
 			(offset
 				(xyz -0.06 0 0)
@@ -7747,18 +7574,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Tales:RV_Disc_D9.50mm_W3.6mm_P5.08mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "890aa53a-6c91-48f6-9e46-8fd70cb991f0")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -8104,6 +7919,7 @@
 			(pintype "passive")
 			(uuid "bdcbc4cc-1b94-4e84-ae18-3f45ce752e46")
 		)
+		(embedded_fonts no)
 		(model "${KICAD7_3DMODEL_DIR}/Varistor.3dshapes/RV_Disc_D7mm_W3.6mm_P5mm.step"
 			(offset
 				(xyz -0.06 0 0)
@@ -8123,7 +7939,7 @@
 		(descr "SOD-123")
 		(tags "SOD-123")
 		(property "Reference" "D8"
-			(at -0.15 0 360)
+			(at -0.15 0 0)
 			(layer "Cmts.User")
 			(uuid "3d1fb7fd-d4db-45b6-a95b-f2cc1f42c2cf")
 			(effects
@@ -8134,7 +7950,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 0 2.1 360)
+			(at 0 2.1 0)
 			(layer "F.Fab")
 			(uuid "86818897-3d69-431f-891f-5d9c7db2acb5")
 			(effects
@@ -8144,20 +7960,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Tales:D_SOD-123"
-			(at 0 0 360)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bdbd379b-3347-48fa-ab0b-41e0f81ee0d0")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2413c6b9-d61d-4fc0-b44c-b9846d997450")
@@ -8169,7 +7973,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2e8d7af6-29ab-4631-9b5d-3617f7d0973d")
@@ -8181,7 +7985,7 @@
 			)
 		)
 		(property "JLCPCB BOM" "1"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c481ccb1-4a17-4884-bc3d-555293df3daa")
@@ -8193,7 +7997,7 @@
 			)
 		)
 		(property "LCSC Part #" "C81598"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "17058a77-5626-4392-a94e-7c37d542f88e")
@@ -8205,7 +8009,7 @@
 			)
 		)
 		(property "Mfr" "Semtech"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c3b7025f-c063-41c9-9d5f-8a79772c824f")
@@ -8217,7 +8021,7 @@
 			)
 		)
 		(property "Mfr PN" "1N4148W"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8ee8fda8-8b9f-433a-bbfb-6583dfc0a9b6")
@@ -8229,7 +8033,7 @@
 			)
 		)
 		(property "Package" "SOD-123"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b21db44e-dd8b-4789-9745-89cdc69e7ecc")
@@ -8241,7 +8045,7 @@
 			)
 		)
 		(property "Technology" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a4bcafb4-c8b0-450b-bfe7-f7bfa8c0e5e5")
@@ -8253,7 +8057,7 @@
 			)
 		)
 		(property "Vendor" "JLCPCB"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "35380141-4c15-42c9-b4b6-fb6988aa033c")
@@ -8265,7 +8069,7 @@
 			)
 		)
 		(property "Vendor PN" "C81598"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6eca9420-cc2d-4b86-b85e-7485f59ede61")
@@ -8344,7 +8148,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "4217e1c6-c617-4b4d-b97f-8e2059c7e83c")
 		)
@@ -8499,7 +8303,7 @@
 			(uuid "ad3c28d5-0685-4c79-9cb2-19ad8eff9604")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -2 360)
+			(at 0 -2 0)
 			(layer "F.Fab")
 			(uuid "f5f17bd1-76bb-4f99-8e95-76308eefa492")
 			(effects
@@ -8512,7 +8316,7 @@
 		(pad "1" smd roundrect
 			(at -1.65 0)
 			(size 1.3 1.75)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "+24V")
 			(pinfunction "K")
@@ -8522,13 +8326,14 @@
 		(pad "2" smd roundrect
 			(at 1.65 0)
 			(size 1.3 1.75)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 9 "Net-(D7-K)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "2d583f4d-e669-4d4b-ae43-ca9d857a3f50")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8565,18 +8370,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Tales:RV_Disc_D9.50mm_W3.6mm_P5.08mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a64f6032-a4cf-4296-b740-db53536cca4d")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -8922,6 +8715,7 @@
 			(pintype "passive")
 			(uuid "f121b262-4c3a-4d4e-9c12-7aca8f607360")
 		)
+		(embedded_fonts no)
 		(model "${KICAD7_3DMODEL_DIR}/Varistor.3dshapes/RV_Disc_D7mm_W3.6mm_P5mm.step"
 			(offset
 				(xyz -0.06 0 0)
@@ -8958,18 +8752,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Tales:TerminalBlock_Dibo_DB141V-2.54-4P_1x04_P2.54mm_Vertical"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ef99f565-5301-4c88-a30d-b9ae081ae5d5")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -9150,7 +8932,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "6da4dda6-3101-47ca-a1ce-8e39331be20b")
 		)
@@ -9161,7 +8943,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "92e1c1a8-55ba-48cb-8338-3776cdb66434")
 		)
@@ -9172,7 +8954,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "071de084-5429-4905-85c8-b5908cb2cdd3")
 		)
@@ -9183,7 +8965,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "ceffc671-e148-4ecc-8046-a8a2a1c34a11")
 		)
@@ -9194,7 +8976,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "cb684073-70fd-4b59-8860-fcec815dc774")
 		)
@@ -9205,7 +8987,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "f235f89a-0b51-4ef6-8a63-7ed94ab7fcc8")
 		)
@@ -9216,7 +8998,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "e88fa77e-28b0-4ae0-a9ea-021ad1bc8894")
 		)
@@ -9227,7 +9009,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "1ce17901-f738-4b82-a4e9-c3a638396c34")
 		)
@@ -9238,7 +9020,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "9ae3391b-0e25-4e06-9bcc-8877c7f0a0ae")
 		)
@@ -9249,7 +9031,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "4957c202-5c0d-4d43-83ce-48deeee080a6")
 		)
@@ -9260,7 +9042,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "417da27d-e142-487e-a87c-2192591a1ed1")
 		)
@@ -9271,7 +9053,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "a36f8178-1826-4b88-a9e6-1c5116a99a32")
 		)
@@ -9282,7 +9064,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "2e93df3c-e213-439b-bdb6-aa70bfd5046e")
 		)
@@ -9293,7 +9075,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "378a5179-993d-4aec-8404-77fec735ebc2")
 		)
@@ -9304,7 +9086,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "eab5c831-6028-467f-bb6f-a71f6bd1dc21")
 		)
@@ -9315,7 +9097,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "ae55b571-881b-4b86-8600-8f2d6b254756")
 		)
@@ -9326,7 +9108,7 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "3b1b4e24-6db3-4b5d-bbbb-c149efe93bd4")
 		)
@@ -9630,6 +9412,7 @@
 			(pintype "passive")
 			(uuid "8915f031-09d9-4407-a02c-ed2c0f91e8a0")
 		)
+		(embedded_fonts no)
 		(model "${TDEV_3DMODEL_DIR}/TerminalBlock.3dshapes/TerminalBlock_DB141V-254-4P.stp"
 			(offset
 				(xyz 6.69 -2.87 0)
@@ -9649,7 +9432,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R1"
-			(at -2.175 0 360)
+			(at -2.175 0 0)
 			(layer "Cmts.User")
 			(uuid "70496854-eeb6-4cf0-9e83-9568b5d5063c")
 			(effects
@@ -9660,7 +9443,7 @@
 			)
 		)
 		(property "Value" "6k8/100mW"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "a091c0b0-319a-4d75-b4ab-6ae8d4670120")
 			(effects
@@ -9670,20 +9453,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Tales:R_0603_1608Metric"
-			(at 0 0 360)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ee31abf4-5eb3-44d0-a6d6-c8b641cfe4b1")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "146f5933-9aef-4fec-aa81-b806aec1d6ca")
@@ -9695,7 +9466,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d33ae52c-e9fd-41a8-8c6a-ffc431c349ab")
@@ -9707,7 +9478,7 @@
 			)
 		)
 		(property "JLCPCB BOM" "1"
-			(at 304.65 137 360)
+			(at 304.65 137 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b876593f-5fa1-49b9-84c8-1bd104b22876")
@@ -9719,7 +9490,7 @@
 			)
 		)
 		(property "LCSC Part #" "C23212"
-			(at 304.65 137 360)
+			(at 304.65 137 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2890c1ee-396c-49c3-9437-0e051c418813")
@@ -9731,7 +9502,7 @@
 			)
 		)
 		(property "Mfr" "Uniroyal"
-			(at 304.65 137 360)
+			(at 304.65 137 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "55fac1e8-c7c4-40ec-b925-c7126a80d0ab")
@@ -9743,7 +9514,7 @@
 			)
 		)
 		(property "Mfr PN" "0603WAF6801T5E"
-			(at 304.65 137 360)
+			(at 304.65 137 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "44c423ba-2550-47a8-9ac8-7c2e35375d25")
@@ -9755,7 +9526,7 @@
 			)
 		)
 		(property "Package" "0603/1608"
-			(at 304.65 137 360)
+			(at 304.65 137 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3aced444-bed0-410e-a6aa-cb80ad435778")
@@ -9767,7 +9538,7 @@
 			)
 		)
 		(property "Technology" ""
-			(at 304.65 137 360)
+			(at 304.65 137 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3f050ec2-39f2-45c2-bc32-f9e3017c45a1")
@@ -9779,7 +9550,7 @@
 			)
 		)
 		(property "Vendor" "JLCPCB"
-			(at 304.65 137 360)
+			(at 304.65 137 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c66cc129-9e5e-4f37-843b-2ac7d5dae1e8")
@@ -9791,7 +9562,7 @@
 			)
 		)
 		(property "Vendor PN" "C23212 "
-			(at 304.65 137 360)
+			(at 304.65 137 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "76d1c543-aba7-4c02-8ab7-0462dfee79f4")
@@ -9908,7 +9679,7 @@
 			(uuid "947b9e2f-2987-4787-87db-f20d25a1d11a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "ca406736-0982-4e84-a51d-786b558ab3df")
 			(effects
@@ -9921,7 +9692,7 @@
 		(pad "1" smd roundrect
 			(at -0.825 0)
 			(size 0.8 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 2 "+24V")
 			(pintype "passive")
@@ -9930,12 +9701,13 @@
 		(pad "2" smd roundrect
 			(at 0.825 0)
 			(size 0.8 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "Net-(D1-A)")
 			(pintype "passive")
 			(uuid "fdd84ff1-243e-430f-9793-62cad23d0b72")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9976,18 +9748,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Tales:Relay_SPST_Songle_SRD_FormB"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "918a7ebc-6eda-4e48-91b2-de0ae519e1a5")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -10013,7 +9773,7 @@
 			)
 		)
 		(property "JLCPCB BOM" "1"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10026,7 +9786,7 @@
 			)
 		)
 		(property "LCSC Part #" "C185801"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10039,7 +9799,7 @@
 			)
 		)
 		(property "Mfr" "Ningbo Songle Relay"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10052,7 +9812,7 @@
 			)
 		)
 		(property "Mfr PN" "SRD-24VDC-SL-B"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10065,7 +9825,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10078,7 +9838,7 @@
 			)
 		)
 		(property "Technology" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10091,7 +9851,7 @@
 			)
 		)
 		(property "Vendor" "JLCPCB"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10104,7 +9864,7 @@
 			)
 		)
 		(property "Vendor PN" "C185801"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10462,6 +10222,7 @@
 			(pintype "passive")
 			(uuid "99d98198-6ea4-4a08-a9bc-588d6332cd2c")
 		)
+		(embedded_fonts no)
 		(model "${KICAD7_3DMODEL_DIR}/Relay_THT.3dshapes/Relay_SPDT_Finder_36.11.wrl"
 			(offset
 				(xyz 2 -6 0)
@@ -10498,18 +10259,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Tales:TerminalBlock_Dibo_DB141V-2.54-2P_1x02_P2.54mm_Vertical"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7ba9f2a5-42e7-460f-878c-dfa377009a84")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -10650,7 +10399,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "a3837868-aea1-435e-867a-776b5e103b45")
 		)
@@ -10661,7 +10410,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "4dd8a790-dbda-4b9c-bd66-795daecde9c7")
 		)
@@ -10672,7 +10421,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "f41a769a-af05-4227-a758-ec006010f921")
 		)
@@ -10683,7 +10432,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "796700f9-a738-453c-87e8-c8233459606d")
 		)
@@ -10694,7 +10443,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "528cc854-fcbf-464e-b730-cbc86a3b5b54")
 		)
@@ -10705,7 +10454,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "c7a89f8c-cd2c-46e1-ba00-ac11e947746a")
 		)
@@ -10716,7 +10465,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "9dc6e27f-f49e-4939-b269-53d9413b6b93")
 		)
@@ -10727,7 +10476,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "a3b6432f-8235-4304-b9ae-225168a6ac3f")
 		)
@@ -10738,7 +10487,7 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "4a421ca1-8b7d-4682-8ecc-247a2ed5e133")
 		)
@@ -10918,6 +10667,7 @@
 			(pintype "passive")
 			(uuid "6483cffa-1880-4b18-afde-93cec7d5dd7e")
 		)
+		(embedded_fonts no)
 		(model "${TDEV_3DMODEL_DIR}/TerminalBlock.3dshapes/TerminalBlock_DB141V-254-2P.stp"
 			(offset
 				(xyz 1.61 -2.87 0)
@@ -10954,18 +10704,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Tales:LED_0603_1608Metric"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0ae3ee19-3eba-41c2-92d3-23dcb00c5387")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -11132,7 +10870,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "d656240f-f7d9-4807-bfc7-23abaa872ffe")
 		)
@@ -11240,7 +10978,7 @@
 		(pad "1" smd roundrect
 			(at -0.7875 0)
 			(size 0.875 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 7 "Net-(D5-K)")
 			(pinfunction "K")
@@ -11250,13 +10988,14 @@
 		(pad "2" smd roundrect
 			(at 0.7875 0)
 			(size 0.875 0.95)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net 6 "Net-(D5-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "8d3ce35b-ac1b-4aa2-9885-fe39826b70a9")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -11406,7 +11145,7 @@
 			(width 0.15)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
 		(uuid "86115594-a3b2-440f-8bfb-00608267afc7")
 	)
@@ -11557,7 +11296,7 @@
 			(width 0.15)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
 		(uuid "f599de5b-ce9e-4ea7-bb1a-15ac9f625b28")
 	)
@@ -11670,7 +11409,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "3884f2c0-c53c-49fd-9b0f-efa7f02cf23e")
 	)
@@ -12327,6 +12066,22 @@
 			(xy 123 62.2) (xy 123 130)
 		)
 		(height 2.54)
+		(format
+			(prefix "")
+			(suffix "")
+			(units 2)
+			(units_format 1)
+			(precision 4)
+		)
+		(style
+			(thickness 0.15)
+			(arrow_length 1.27)
+			(text_position_mode 0)
+			(arrow_direction outward)
+			(extension_height 0.58642)
+			(extension_offset 0)
+			(keep_text_aligned yes)
+		)
 		(gr_text "67.8000 mm"
 			(at 119.31 96.1 90)
 			(layer "Dwgs.User")
@@ -12338,6 +12093,15 @@
 				)
 			)
 		)
+	)
+	(dimension
+		(type aligned)
+		(layer "Dwgs.User")
+		(uuid "00000000-0000-0000-0000-00006051346e")
+		(pts
+			(xy 193 60.54) (xy 125 60.54)
+		)
+		(height 2.54)
 		(format
 			(prefix "")
 			(suffix "")
@@ -12349,17 +12113,11 @@
 			(thickness 0.15)
 			(arrow_length 1.27)
 			(text_position_mode 0)
+			(arrow_direction outward)
 			(extension_height 0.58642)
-			(extension_offset 0) keep_text_aligned)
-	)
-	(dimension
-		(type aligned)
-		(layer "Dwgs.User")
-		(uuid "00000000-0000-0000-0000-00006051346e")
-		(pts
-			(xy 193 60.54) (xy 125 60.54)
+			(extension_offset 0)
+			(keep_text_aligned yes)
 		)
-		(height 2.54)
 		(gr_text "68.0000 mm"
 			(at 159 56.85 0)
 			(layer "Dwgs.User")
@@ -12371,19 +12129,6 @@
 				)
 			)
 		)
-		(format
-			(prefix "")
-			(suffix "")
-			(units 2)
-			(units_format 1)
-			(precision 4)
-		)
-		(style
-			(thickness 0.15)
-			(arrow_length 1.27)
-			(text_position_mode 0)
-			(extension_height 0.58642)
-			(extension_offset 0) keep_text_aligned)
 	)
 	(segment
 		(start 134.15 68)
@@ -13839,4 +13584,5 @@
 			)
 		)
 	)
+	(embedded_fonts no)
 )
