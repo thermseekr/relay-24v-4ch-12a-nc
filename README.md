@@ -1,6 +1,6 @@
 # eumesmo-rl-4ch12a-nc
 
-Relay board with 4x 24 VDC NC relays. This board is designed to be used togheter with [ESP-24V-16CH](https://github.com/thermseekr/esp-24v-16ch), but can be driven by any 24V control circuit compatible with NPN inputs.
+Relay board with 4x 24 VDC NC relays. This board is designed to be used togheter with [eumesmo-io-24v16ch](https://github.com/thermseekr/eumesmo-io-24v16ch), but can be driven by any 24V control circuit compatible with NPN inputs.
 
 The board is compatible with the SP7 DIN rail system from Metaltex.
 
