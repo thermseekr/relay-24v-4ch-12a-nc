@@ -1,0 +1,9 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"D1, D3, D5, D7",0603,4,GREEN,C72043
+"D2, D4, D6, D8",D_SOD-123,4,1N4148,C81598
+J1,TerminalBlock_Wago_250-202_1x02_P3.5mm_45Degree,1,250-202,C2765061
+J2,TerminalBlock_Wago_250-204_1x04_P3.5mm_45Degree,1,250-204,C2765063
+"J3, J4",TerminalBlock_Dibo_DB142V-5.08-4P_1x04_P5.08mm_Vertical,2,DB142V-5.08-4P,C2898701
+"K1, K2, K3, K4",Relay_SPST_Songle_SRD_FormB,4,Songle_SRD_1B,C185801
+"R1, R2, R3, R4",0603,4,10k/100mW,C25804
+"RV1, RV2, RV3, RV4",RV_Disc_D9.50mm_W3.6mm_P5.08mm,4,275VAC,C2761646
