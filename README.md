@@ -8,7 +8,7 @@ The board is compatible with the SP7 DIN rail system from Metaltex.
 
 ## VERSION HISTORY
 
-V1.2 - 2026/06/13 - Repository renamed from RELAY-24V-4CH-12A-NC to eumesmo-4ch12A-nc to align the design with the eumesmo line of building automation products.
+V1.2 - 2026/06/13 - Repository renamed from RELAY-24V-4CH-12A-NC to eumesmo-rl-4ch12A-nc to align the design with the eumesmo line of building automation products.
 
 V1.1 - 2026/06/13 - Input terminal blocks replaced from 2.54mm to 3.5mm pitch for easier installation in the field.
 
