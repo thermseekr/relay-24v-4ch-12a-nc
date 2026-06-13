@@ -8,6 +8,12 @@ Board uses Omron 16A relays and is limited to 12A/channel per copper trace capac
 
 ![alt text](https://github.com/thermseekr/relay-24v-4ch-12a-nc/blob/main/V1/relay-24v-4ch-12a-nc-v1.1.png "RELAY-24V-4CH-12A-NC V1")
 
+## VERSION HISTORY
+
+V1.1 - 2026/06/13 - Input terminal blocks replaced from 2.54mm to 3.5mm pitch for easier installation in the field.
+
+V1.0 - Initial release.
+
 ## LICENSE
 
 This project is licensed under the [Creative Commons BY-NC 4.0 License](https://creativecommons.org/licenses/by-nc/4.0/).
