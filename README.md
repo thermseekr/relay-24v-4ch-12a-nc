@@ -6,7 +6,7 @@ The board is compatible with the SP7 DIN rail system from Metaltex.
 
 It uses Omron 16A relays and is limited to 12A/channel per copper trace capacity.
 
-![eumesmo-rl-4ch12a-nc](https://github.com/thermseekr/relay-24v-4ch-12a-nc/blob/main/V1/relay-24v-4ch-12a-nc-v1.1.png)
+![eumesmo-rl-4ch12a-nc](https://github.com/thermseekr/relay-24v-4ch-12a-nc/blob/main/V1/eumesmo-rl-4ch12a-nc-v1.2.png)
 
 ## VERSION HISTORY
 
