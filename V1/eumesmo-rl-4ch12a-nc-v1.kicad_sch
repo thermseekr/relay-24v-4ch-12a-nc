@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "eumesmo 4x 24V Relay Module")
-		(date "2026-06-13")
+		(date "2026-06-17")
 		(rev "V1.2")
 	)
 	(lib_symbols
